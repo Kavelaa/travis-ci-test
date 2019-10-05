@@ -5,6 +5,7 @@ install:
   - yarn
 script:
   - yarn build
+  - cp -r ./build/* .
 deploy:
   provider: pages
   skip_cleanup: true
