@@ -5,7 +5,7 @@ install:
   - yarn
 script:
   - yarn build
-  - ls -a | grep -v 'build' | grep -v '^\.*$' | xargs rm -rf && mv -r ./build/* . && rmdir build
+  - ls -a | grep -v 'build' | grep -v '^\.*$' | xargs rm -rf && mv ./build/* . && rmdir build
 deploy:
   provider: pages
   skip_cleanup: true
